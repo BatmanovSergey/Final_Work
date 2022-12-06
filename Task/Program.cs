@@ -14,7 +14,7 @@ string ?[] CreateArray(int size) // Метод создания массива, 
     string?[] arr = new string[size];
     for (int i = 0; i < size; i++)
     {
-        Console.Write("Введите слово: ");
+        Console.Write("Введите текст: ");
         arr[i] = Console.ReadLine();
     }
     return arr;
@@ -26,7 +26,7 @@ void PrintArray(string?[] arr) // Метод печати массива
     for (int i = 0; i < arr.Length; i++)
     {
         if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
-        else Console.Write($"{arr[i]}");
+        else Console.Write(arr[i]);
     }
     Console.Write(" ]");
 }
